@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js"
+        integrity="sha512-VJ6+sp2E5rFQk05caiXXzQd1wBABpjEj1r5kMiLmGAAgwPItw1YpqsCCBtq8Yr1x6C49/mTpRdXtq8O2RcZhlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cont"
+        style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large;">
+        <span id="ok">My blog</span>
+        <span id="counts">0</span>
+    </div>
+    <br>
+    <br>
+    <div class="heads"
+        style="font-size: x-large; text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        My threatning School life
+    </div>
+    <br>
+    <br>
+    <div class="contain" style="display: flex; justify-content: center;">
+        <div class="content"
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; width: 600px; text-align: center; font-size:large;">
+            I was the first child of my parents when i was admitted in a sr. sec school in India, it was a very
+            difficult
+            phase for me as people out there used to call me an ugly guy, my face color was black and kind of an
+            introvert i
+            don’t know who put these thing in the minds of those little students at that time that there are black
+            people
+            who are dangerous and whites are friendly, umm.. i personally think that these are their parents, but
+            according
+            to me as i was a black when was a child i think that i was a kind of person who was really friendly but only
+            if
+            someone came to me to talk (as metioned i was an introvert ). You can bear almost everything the children
+            say
+            about you face, color and your personality but you can never bear if your teachers are against you i can’t
+            say
+            that my teacher were surely against me because of my color but ya whenever they used to see me they just
+            make a
+            very irritated face well, we will talk about them someday later but let me tell you the story of my school
+            life
+            whoch actually made it very threatning…….
+
+            So i was in 6th grade when this happened, I was in the school ground in the front feild, it was the recess
+            time
+            and I was just having lunch with my friends(not really friends) they, i just got into a fight with one of my
+            friend and he said me that he did not wanted to be my friend anymore, it was a group of approx 5 people
+            including me, he just stood up and left and all the other 3 left with him calling me a dumb guy, i was
+            really
+            upset after that because they were the only friends of mine, do you think it must have stopped over here ?
+
+            No, they just started to call me dumb in front of the whole class and it was really embarassing because they
+            used to go to each and every student of my class and say this, and just after listening that the person
+            starts
+            laughing but its now good to tell that NOW THAT DUMB BOY is in the ONE OF THE MOST REPUTATED ENGENEERING
+            COLLEGE
+            OF INDIA : BITS PILANI
+
+            Well to the summary time is the best healer this was just 1% of what i got from my school life the other 99%
+            might be more worse to tell but to say time is the best healer..
+
+
+        </div>
+    </div>
+</body>
+<script>
+    let ios = io()
+    ios.on("pins", function (data) {
+        document.getElementById("counts").innerHTML = data.paper
+    })
+</script>
+
+</html>
